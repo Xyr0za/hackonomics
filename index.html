@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albedo</title>
+
+    <!-- Standard favicon -->
+    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+
+    <!-- PNG icons for different sizes -->
+    <link rel="icon" href="favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+
+    <!-- Apple Touch Icon (iOS) -->
+    <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" sizes="180x180">
+
+    <!-- Android/Chrome app icon -->
+    <link rel="manifest" href="favicons/site.webmanifest">
+
+    <!-- Theme Color (Android and Windows) -->
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="pixel.js"></script>
+</head>
+<body>
+<div class="text-container" id="title_card">
+    <h1 class="roboto">Albedo</h1>
+</div>
+<div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+        </defs>
+    </svg>
+    <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+    </div>
+</div>
+</body>
+</html>
